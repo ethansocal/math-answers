@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState } from "react";
 import { useLocalStorage } from "@uidotdev/usehooks";
 import chapters from "./assets/calc_10e_chapters.xml?raw";
 import TOC from "./assets/table_of_contents.json";
@@ -87,10 +87,6 @@ function getProblemUrl(problem: Problem) {
         .replace(/\D/g, "")
         .padStart(3, "0")}.${filetype}`;
 }
-function preloadImage(url: string) {
-    const img = new Image();
-    img.src = url;
-}
 
 function App() {
     const [problems, setProblems] = useLocalStorage("problems", "");
@@ -100,18 +96,19 @@ function App() {
     );
     const [expanded, setExpanded] = useState<string[]>([]);
     const [missing, setMissing] = useState<string[]>([]);
-    useEffect(() => {
-        for (const problem of parsedProblems) {
-            preloadImage(getProblemUrl(problem)!);
-        }
-    });
 
     return (
         <div className="p-3">
-            <header className="border-b border-black mb-4">
-                <h1 className="text-2xl">Calculus Solution Viewer</h1>
+            <header className=" mb-4">
+                <h1 className="text-3xl">Calculus Solution Viewer</h1>
             </header>
-            <h1>Copy and paste the assignment numbers below:</h1>
+            <h1>
+                If you haven't done your homework and you're looking at this,
+                you WILL go to jail!1!111
+            </h1>
+            <h1 className="mb-3">
+                Copy and paste the assignment numbers below:
+            </h1>
             <ProblemInput problems={problems} setProblems={setProblems} />
             {/* <h1>Homework history (by due date):</h1> */}
             {parsedProblems.length > 0 && (
