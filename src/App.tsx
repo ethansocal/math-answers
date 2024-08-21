@@ -105,7 +105,7 @@ function App() {
             </header>
             <h1>Copy and paste the assignment numbers below:</h1>
             <ProblemInput problems={problems} setProblems={setProblems} />
-            <h1>Homework history (by due date):</h1>
+            {/* <h1>Homework history (by due date):</h1> */}
             {parsedProblems.length > 0 && (
                 <>
                     <h1>Detected Problems:</h1>
