@@ -149,15 +149,25 @@ function App() {
                                 </AccordionTrigger>
                                 <AccordionContent>
                                     {!missing.includes(getProblemUrl(i)!) ? (
-                                        <img
-                                            src={getProblemUrl(i) || ""}
-                                            onError={() => {
-                                                setMissing((prev) => [
-                                                    ...prev,
-                                                    getProblemUrl(i)!,
-                                                ]);
-                                            }}
-                                        />
+                                        <a
+                                            href={`https://www.calcchat.com/book/Calculus-10e/${
+                                                i.chapter
+                                            }/${i.section}}/${i.problem.replace(
+                                                /\D/g,
+                                                ""
+                                            )}/`}
+                                            target="_blank"
+                                        >
+                                            <img
+                                                src={getProblemUrl(i) || ""}
+                                                onError={() => {
+                                                    setMissing((prev) => [
+                                                        ...prev,
+                                                        getProblemUrl(i)!,
+                                                    ]);
+                                                }}
+                                            />
+                                        </a>
                                     ) : (
                                         <p className="p-3 bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-300 rounded-lg font-semibold">
                                             Solution not found! If you have a
