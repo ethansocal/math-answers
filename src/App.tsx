@@ -10,7 +10,6 @@ import {
 } from "./components/ui/accordion";
 import { Textarea } from "./components/ui/textarea";
 import { Button } from "./components/ui/button";
-import { Select } from "./components/ui/select";
 
 function ProblemInput({
     problems,
@@ -144,7 +143,7 @@ function App() {
                                     {!missing.includes(getProblemUrl(i)!) ? (
                                         <img
                                             src={getProblemUrl(i) || ""}
-                                            onError={(e) => {
+                                            onError={() => {
                                                 setMissing((prev) => [
                                                     ...prev,
                                                     getProblemUrl(i)!,
