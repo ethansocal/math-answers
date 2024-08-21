@@ -1,0 +1,196 @@
+P.1 Graphs and Models 2
+P.2 Linear Models and Rates of Change 10
+P.3 Functions and Their Graphs 19
+P.4 Fitting Models to Data 31
+Review Exercises 37
+P.S. Problem Solving 39
+Limits and Their Properties 41
+1.1 A Preview of Calculus 42
+1.2 Finding Limits Graphically and Numerically 48
+1.3 Evaluating Limits Analytically 59
+1.4 Continuity and One-Sided Limits 70
+1.5 Infinite Limits 83
+Section Project: Graphs and Limits of
+Trigonometric Functions 90
+Review Exercises 91
+P.S. Problem Solving 93
+Differentiation 95
+2.1 The Derivative and the Tangent Line Problem 96
+2.2 Basic Differentiation Rules and Rates of Change 106
+2.3 Product and Quotient Rules and Higher-Order
+Derivatives 118
+2.4 The Chain Rule 129
+2.5 Implicit Differentiation 140
+Section Project: Optical Illusions 147
+2.6 Related Rates 148
+Review Exercises 157
+P.S. Problem Solving 159
+Applications of Differentiation 161
+3.1 Extrema on an Interval 162
+3.2 Rolle’s Theorem and the Mean Value Theorem 170
+3.3 Increasing and Decreasing Functions and
+the First Derivative Test 177
+Section Project: Rainbows 186
+3.4 Concavity and the Second Derivative Test 187
+3.5 Limits at Infinity 195
+3.6 A Summary of Curve Sketching 206
+3.7 Optimization Problems 215
+Section Project: Connecticut River 224
+3.8 Newton’s Method 225
+3.9 Differentials 231
+Review Exercises 238
+P.S. Problem Solving 241
+Integration 243
+4.1 Antiderivatives and Indefinite Integration 244
+4.2 Area 254
+4.3 Riemann Sums and Definite Integrals 266
+4.4 The Fundamental Theorem of Calculus 277
+Section Project: Demonstrating the
+Fundamental Theorem 291
+4.5 Integration by Substitution 292
+4.6 Numerical Integration 305
+Review Exercises 312
+P.S. Problem Solving 315
+Logarithmic, Exponential, and
+Other Transcendental Functions 317
+5.1 The Natural Logarithmic Function: Differentiation 318
+5.2 The Natural Logarithmic Function: Integration 328
+5.3 Inverse Functions 337
+5.4 Exponential Functions: Differentiation and Integration 346
+5.5 Bases Other than
+e and Applications 356
+Section Project: Using Graphing Utilities to
+Estimate Slope 365
+5.6 Inverse Trigonometric Functions: Differentiation 366
+5.7 Inverse Trigonometric Functions: Integration 375
+5.8 Hyperbolic Functions 383
+Section Project: St. Louis Arch 392
+Review Exercises 393
+P.S. Problem Solving 395
+Differential Equations 397
+6.1 Slope Fields and Euler’s Method 398
+6.2 Differential Equations: Growth and Decay 407
+6.3 Separation of Variables and the Logistic Equation 415
+6.4 First-Order Linear Differential Equations 424
+Section Project: Weight Loss 430
+Review Exercises 431
+P.S. Problem Solving 433
+Applications of Integration 435
+7.1 Area of a Region Between Two Curves 436
+7.2 Volume: The Disk Method 446
+7.3 Volume: The Shell Method 457
+Section Project: Saturn 465
+7.4 Arc Length and Surfaces of Revolution 466
+7.5 Work 477
+Section Project: Tidal Energy 485
+7.6 Moments, Centers of Mass, and Centroids 486
+7.7 Fluid Pressure and Fluid Force 497
+Review Exercises 503
+P.S. Problem Solving 505
+Integration Techniques, L’Hopital’s Rule,
+and Improper Integrals 507
+8.1 Basic Integration Rules 508
+8.2 Integration by Parts 515
+8.3 Trigonometric Integrals 524
+Section Project: Power Lines 532
+8.4 Trigonometric Substitution 533
+8.5 Partial Fractions 542
+8.6 Integration by Tables and Other Integration Techniques 551
+8.7 Indeterminate Forms and L’Hopital’s Rule 557
+8.8 Improper Integrals 568
+Review Exercises 579
+P.S. Problem Solving 581
+Infinite Series 583
+9.1 Sequences 584
+9.2 Series and Convergence 595
+Section Project: Cantor’s Disappearing Table 604
+9.3 The Integral Test and
+p-Series 605
+Section Project: The Harmonic Series 611
+9.4 Comparisons of Series 612
+Section Project: Solera Method 618
+9.5 Alternating Series 619
+9.6 The Ratio and Root Tests 627
+9.7 Taylor Polynomials and Approximations 636
+9.8 Power Series 647
+9.9 Representation of Functions by Power Series 657
+9.10 Taylor and Maclaurin Series 664
+Review Exercises 676
+P.S. Problem Solving 679
+Conics, Parametric Equations, and
+Polar Coordinates 681
+10.1 Conics and Calculus 682
+10.2 Plane Curves and Parametric Equations 696
+Section Project: Cycloids 705
+10.3 Parametric Equations and Calculus 706
+10.4 Polar Coordinates and Polar Graphs 715
+Section Project: Anamorphic Art 724
+10.5 Area and Arc Length in Polar Coordinates 725
+10.6 Polar Equations of Conics and Kepler’s Laws 734
+Review Exercises 742
+P.S. Problem Solving 745
+Vectors and the Geometry of Space 747
+11.1 Vectors in the Plane 748
+11.2 Space Coordinates and Vectors in Space 758
+11.3 The Dot Product of Two Vectors 766
+11.4 The Cross Product of Two Vectors in Space 775
+11.5 Lines and Planes in Space 783
+Section Project: Distances in Space 793
+11.6 Surfaces in Space 794
+11.7 Cylindrical and Spherical Coordinates 804
+Review Exercises 811
+P.S. Problem Solving 813
+Vector-Valued Functions 815
+12.1 Vector-Valued Functions 816
+Section Project: Witch of Agnesi 823
+12.2 Differentiation and Integration of Vector-Valued
+Functions 824
+12.3 Velocity and Acceleration 832
+12.4 Tangent Vectors and Normal Vectors 841
+12.5 Arc Length and Curvature 851
+Review Exercises 863
+P.S. Problem Solving 865
+Functions of Several Variables 867
+13.1 Introduction to Functions of Several Variables 868
+13.2 Limits and Continuity 880
+13.3 Partial Derivatives 890
+Section Project: Moiré Fringes 899
+13.4 Differentials 900
+13.5 Chain Rules for Functions of Several Variables 907
+13.6 Directional Derivatives and Gradients 915
+13.7 Tangent Planes and Normal Lines 927
+Section Project: Wildflowers 935
+13.8 Extrema of Functions of Two Variables 936
+13.9 Applications of Extrema 944
+Section Project: Building a Pipeline 951
+13.10 Lagrange Multipliers 952
+Review Exercises 960
+P.S. Problem Solving 963
+Multiple Integration 965
+14.1 Iterated Integrals and Area in the Plane 966
+14.2 Double Integrals and Volume 974
+14.3 Change of Variables: Polar Coordinates 986
+14.4 Center of Mass and Moments of Inertia 994
+Section Project: Center of Pressure on a Sail 1001
+14.5 Surface Area 1002
+Section Project: Capillary Action 1008
+14.6 Triple Integrals and Applications 1009
+14.7 Triple Integrals in Other Coordinates 1020
+Section Project: Wrinkled and Bumpy Spheres 1026
+14.8 Change of Variables: Jacobians 1027
+Review Exercises 1034
+P.S. Problem Solving 1037
+Vector Analysis 1039
+15.1 Vector Fields 1040
+15.2 Line Integrals 1051
+15.3 Conservative Vector Fields and Independence of Path 1065
+15.4 Green’s Theorem 1075
+Section Project: Hyperbolic and Trigonometric Functions 1083
+15.5 Parametric Surfaces 1084
+15.6 Surface Integrals 1094
+Section Project: Hyperboloid of One Sheet 1105
+15.7 Divergence Theorem 1106
+15.8 Stokes’s Theorem 1114
+Review Exercises 1120
+Section Project: The Planimeter 1122
+P.S. Problem Solving 1123
