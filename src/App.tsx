@@ -116,8 +116,7 @@ function App() {
             {/* <h1>Homework history (by due date):</h1> */}
             {parsedProblems.length > 0 && (
                 <>
-                    <h1>Detected Problems:</h1>
-                    <div className="flex flex-row gap-3">
+                    <div className="flex flex-row gap-3 mt-4">
                         <Button onClick={() => setExpanded([])}>
                             Collapse All
                         </Button>
