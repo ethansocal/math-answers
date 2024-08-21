@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useLocalStorage } from "@uidotdev/usehooks";
+import { useDebounce, useLocalStorage } from "@uidotdev/usehooks";
 import chapters from "./assets/calc_10e_chapters.xml?raw";
 import TOC from "./assets/table_of_contents.json";
 import {
@@ -83,10 +83,13 @@ function getProblemUrl(problem: Problem) {
         `CHAPTER[NAME='${chapter}'] > SECTION[NAME='${section}']`
     );
     if (!element) return null;
-    return `${baseUrl}/${element.getAttribute("PRE")}${problemNumber.padStart(
-        3,
-        "0"
-    )}.${filetype}`;
+    return `${baseUrl}/${element.getAttribute("PRE")}${problemNumber
+        .replace(/\D/g, "")
+        .padStart(3, "0")}.${filetype}`;
+}
+function preloadImage(url: string) {
+    const img = new Image();
+    img.src = url;
 }
 
 function App() {
@@ -97,6 +100,11 @@ function App() {
     );
     const [expanded, setExpanded] = useState<string[]>([]);
     const [missing, setMissing] = useState<string[]>([]);
+    useDebounce(() => {
+        for (const problem of parsedProblems) {
+            preloadImage(getProblemUrl(problem)!);
+        }
+    }, 1000);
 
     return (
         <div className="p-3">
