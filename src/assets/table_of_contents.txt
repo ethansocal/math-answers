@@ -17,8 +17,7 @@ P.S. Problem Solving 93
 Differentiation 95
 2.1 The Derivative and the Tangent Line Problem 96
 2.2 Basic Differentiation Rules and Rates of Change 106
-2.3 Product and Quotient Rules and Higher-Order
-Derivatives 118
+2.3 Product and Quotient Rules and Higher-Order Derivatives 118
 2.4 The Chain Rule 129
 2.5 Implicit Differentiation 140
 Section Project: Optical Illusions 147
@@ -28,8 +27,7 @@ P.S. Problem Solving 159
 Applications of Differentiation 161
 3.1 Extrema on an Interval 162
 3.2 Rolle’s Theorem and the Mean Value Theorem 170
-3.3 Increasing and Decreasing Functions and
-the First Derivative Test 177
+3.3 Increasing and Decreasing Functions and the First Derivative Test 177
 Section Project: Rainbows 186
 3.4 Concavity and the Second Derivative Test 187
 3.5 Limits at Infinity 195
@@ -57,8 +55,7 @@ Other Transcendental Functions 317
 5.2 The Natural Logarithmic Function: Integration 328
 5.3 Inverse Functions 337
 5.4 Exponential Functions: Differentiation and Integration 346
-5.5 Bases Other than
-e and Applications 356
+5.5 Bases Other than e and Applications 356
 Section Project: Using Graphing Utilities to
 Estimate Slope 365
 5.6 Inverse Trigonometric Functions: Differentiation 366
@@ -104,8 +101,7 @@ Infinite Series 583
 9.1 Sequences 584
 9.2 Series and Convergence 595
 Section Project: Cantor’s Disappearing Table 604
-9.3 The Integral Test and
-p-Series 605
+9.3 The Integral Test and p-Series 605
 Section Project: The Harmonic Series 611
 9.4 Comparisons of Series 612
 Section Project: Solera Method 618
@@ -143,8 +139,7 @@ P.S. Problem Solving 813
 Vector-Valued Functions 815
 12.1 Vector-Valued Functions 816
 Section Project: Witch of Agnesi 823
-12.2 Differentiation and Integration of Vector-Valued
-Functions 824
+12.2 Differentiation and Integration of Vector-Valued Functions 824
 12.3 Velocity and Acceleration 832
 12.4 Tangent Vectors and Normal Vectors 841
 12.5 Arc Length and Curvature 851
