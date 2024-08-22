@@ -10,6 +10,7 @@ import {
 } from "./components/ui/accordion";
 import { Textarea } from "./components/ui/textarea";
 import { Button } from "./components/ui/button";
+import { ModeToggle } from "./components/mode-toggle";
 
 function ProblemInput({
     problems,
@@ -50,6 +51,7 @@ function parseProblemInput(input: string): Problem[] {
     for (const line of input.split("\n")) {
         if (line.split("/").length !== 2) continue;
         const [page, problemList] = line.split("/");
+        if (parseInt(page) < 0) continue;
         const { chapter, section } = findProblem(parseInt(page))!;
         if (problemList.split(",").length === 0) continue;
         for (const problem of problemList.split(",")) {
@@ -99,8 +101,11 @@ function App() {
 
     return (
         <div className="p-3">
-            <header className=" mb-4">
-                <h1 className="text-3xl">Calculus Solution Viewer</h1>
+            <header className="flex flex-row justify-between mb-4">
+                <h1 className="text-3xl font-semibold">
+                    Calculus Solution Viewer
+                </h1>
+                <ModeToggle />
             </header>
             <h1>
                 If you haven't done your homework and you're looking at this,
@@ -134,10 +139,10 @@ function App() {
                             setExpanded(e);
                         }}
                     >
-                        {parsedProblems.map((i) => (
+                        {parsedProblems.map((i, index) => (
                             <AccordionItem
                                 value={JSON.stringify(i)}
-                                key={JSON.stringify(i)}
+                                key={JSON.stringify({ ...i, index })}
                             >
                                 <AccordionTrigger>
                                     pg. {i.page} - {i.chapter}.{i.section} #
