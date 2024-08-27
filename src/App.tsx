@@ -193,7 +193,7 @@ function App() {
                                         <a
                                             href={`https://www.calcchat.com/book/Calculus-10e/${
                                                 i.chapter
-                                            }/${i.section}}/${i.problem.replace(
+                                            }/${i.section}/${i.problem.replace(
                                                 /\D/g,
                                                 ""
                                             )}/`}
