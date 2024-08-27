@@ -55,6 +55,46 @@ function parseProblemInput(input: string): Problem[] {
         const { chapter, section } = findProblem(parseInt(page))!;
         if (problemList.split(",").length === 0) continue;
         for (const problem of problemList.split(",")) {
+            if (problem.includes("-")) {
+                if (problem.endsWith("odd")) {
+                    const [start, end] = problem
+                        .split("-")
+                        .map((i) => parseInt(i.replace(/\D/g, "")));
+                    for (let i = start; i <= end; i += 2) {
+                        problems.push({
+                            chapter,
+                            section,
+                            problem: i.toString(),
+                            page,
+                        });
+                    }
+                    continue;
+                } else if (problem.endsWith("even")) {
+                    const [start, end] = problem
+                        .split("-")
+                        .map((i) => parseInt(i.replace(/\D/g, "")));
+                    for (let i = start + 1; i <= end; i += 2) {
+                        problems.push({
+                            chapter,
+                            section,
+                            problem: i.toString(),
+                            page,
+                        });
+                    }
+                    continue;
+                }
+                const [start, end] = problem
+                    .split("-")
+                    .map((i) => parseInt(i.replace(/\D/g, "")));
+                for (let i = start; i <= end; i++) {
+                    problems.push({
+                        chapter,
+                        section,
+                        problem: i.toString(),
+                        page,
+                    });
+                }
+            }
             problems.push({
                 chapter,
                 section,
