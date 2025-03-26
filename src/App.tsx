@@ -149,7 +149,13 @@ function App() {
             </header>
             <h1>
                 If you haven't done your homework and you're looking at this,
-                you WILL go to jail!1!111
+                please click this button:{" "}
+                <a
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    target="_blank"
+                >
+                    <Button>The I Haven't Done My Homework Button</Button>
+                </a>
             </h1>
             <h1 className="mb-3">
                 Copy and paste the assignment numbers below:
