@@ -68,7 +68,6 @@ function parseProblemInput(input: string): Problem[] {
                             page,
                         });
                     }
-                    continue;
                 } else if (problem.endsWith("even")) {
                     const [start, end] = problem
                         .split("-")
@@ -81,26 +80,27 @@ function parseProblemInput(input: string): Problem[] {
                             page,
                         });
                     }
-                    continue;
+                } else {
+                    const [start, end] = problem
+                        .split("-")
+                        .map((i) => parseInt(i.replace(/\D/g, "")));
+                    for (let i = start; i <= end; i++) {
+                        problems.push({
+                            chapter,
+                            section,
+                            problem: i.toString(),
+                            page,
+                        });
+                    }
                 }
-                const [start, end] = problem
-                    .split("-")
-                    .map((i) => parseInt(i.replace(/\D/g, "")));
-                for (let i = start; i <= end; i++) {
-                    problems.push({
-                        chapter,
-                        section,
-                        problem: i.toString(),
-                        page,
-                    });
-                }
+            } else {
+                problems.push({
+                    chapter,
+                    section,
+                    problem,
+                    page,
+                });
             }
-            problems.push({
-                chapter,
-                section,
-                problem,
-                page,
-            });
         }
     }
     return problems;
