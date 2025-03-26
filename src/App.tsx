@@ -52,7 +52,9 @@ function parseProblemInput(input: string): Problem[] {
         if (line.split("/").length !== 2) continue;
         const [page, problemList] = line.split("/");
         if (parseInt(page) < 0) continue;
-        const { chapter, section } = findProblem(parseInt(page))!;
+        const problemInfo = findProblem(parseInt(page));
+        if (!problemInfo) continue;
+        const { chapter, section } = problemInfo;
         if (problemList.split(",").length === 0) continue;
         for (const problem of problemList.split(",")) {
             if (problem.includes("-")) {
